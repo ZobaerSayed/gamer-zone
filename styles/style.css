@@ -18,7 +18,6 @@ nav {
 }
 
 .nav-container {
-    border: 2px solid red;
     min-height: 50px;
     display: flex;
     max-width: 1400px;
@@ -31,11 +30,9 @@ nav {
     align-items: center;
     justify-content: center;
     width: 50%;
-    border: 2px solid green;
 }
 
 .logo img {
-    border: 2px solid blue;
     width: 100px;
     height: 50px;
     object-fit: cover;
@@ -50,14 +47,12 @@ nav {
 }
 
 .logo p {
-    border: 2px solid lawngreen;
     font-size: 45px;
     font-weight: bolder;
     font-weight: 900px;
 }
 
 .nav-item {
-    border: 2px solid yellow;
     width: 50%;
     display: flex;
     justify-content: end;
@@ -86,7 +81,6 @@ nav {
 .nav-item .link-btn {
     color: black;
     text-align: center;
-    background-color: rgb(192, 205, 218);
     padding: 10px 20px;
     font-weight: 700;
     border-radius: 5px;
@@ -95,7 +89,6 @@ nav {
 
 /* banner */
 .banner-container {
-    border: 2px solid red;
     max-width: 1400px;
     min-height: 50px;
     margin: 50px auto 0;
@@ -106,9 +99,8 @@ nav {
 }
 
 .banner-text {
-    border: 1px solid greenyellow;
+    padding-top: 50px;
     width: 50%;
-    margin-top: 80px;
     background-image: url("./images/Group 14.png"), linear-gradient(rgba(236, 209, 209, 0.2), rgba(156, 154, 154, 0.1));
 }
 
@@ -163,7 +155,6 @@ nav {
 }
 
 .banner-img {
-    border: 1px solid magenta;
     width: 50%;
 }
 
@@ -182,4 +173,140 @@ nav {
     text-align: right;
     padding-left: 40px;
     background-color: rgb(255, 252, 252);
+}
+
+.banner-text2 {
+    border: 1px solid greenyellow;
+    width: 50%;
+
+}
+
+.banner-text2 h1 {
+    font-size: 50px;
+    font-weight: 800;
+    background-image: linear-gradient(to bottom, #df3aae, #9376e0);
+    color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 20px;
+}
+
+.banner-text2 p {
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.banner-button {
+    background-color: #df3aae;
+    color: aliceblue;
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    width: 180px;
+    height: 60px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 90px;
+}
+
+.banner-text2 h3 {
+    font-size: 20px;
+    line-height: 2em;
+}
+
+.banner-text2 h2 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* banner-2 ends */
+
+/* product starts */
+.gradient {
+    background-image: linear-gradient(to bottom, #df3aae, #9376e0);
+    color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 20px;
+}
+
+.head-tag {
+    line-height: 2.8em;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.font-tag {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 1400px;
+    margin: 50px auto 0;
+}
+
+.single-product img {
+    width: 100%;
+}
+
+.single-product p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Add your movie page styles here, e.g., setting background color, font styles, etc. */
+
+/* Watch Now Button Styles */
+.watch-now-button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: aliceblue;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 5px;
+    transition: background-color 0.8s ease;
+}
+
+.watch-now-button i {
+    margin-right: 8px;
+}
+
+.watch-now-button:hover {
+    background-color: #f44336;
+}
+
+/* Movie Picture Container Styles */
+.movie-picture-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.movie-picture-container img {
+    width: 100%;
+    /* Adjust this value to set the width of the movie picture */
+    height: 100%;
+    /* Maintain aspect ratio */
+}
+
+.movie-picture-container .watch-now-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
