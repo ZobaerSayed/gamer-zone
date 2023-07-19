@@ -2,22 +2,35 @@
     box-sizing: border-box;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav&display=swap');
 
 body {
     font-family: 'Yantramanav', sans-serif;
 }
 
+nav {
+    background-color: antiquewhite;
+}
+
 .nav-container {
     border: 2px solid red;
     min-height: 50px;
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
 }
 
 .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: 50%;
     border: 2px solid green;
 }
 
@@ -45,5 +58,37 @@ body {
 
 .nav-item {
     border: 2px solid yellow;
-    width: 70%;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    gap: 45px;
+    align-items: center;
+}
+
+
+
+.nav-item a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(24, 20, 20);
+}
+
+.link-btn a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    color: rgb(24, 20, 20);
+}
+
+.nav-item .link-btn {
+    color: black;
+    text-align: center;
+    background-color: rgb(192, 205, 218);
+    padding: 10px 20px;
+    font-weight: 700;
+    border-radius: 5px;
+
 }

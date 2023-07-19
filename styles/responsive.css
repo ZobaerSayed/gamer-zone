@@ -1,1 +1,9 @@
-@media screen and (min-width: 400px) {}
+@media screen and (max-width: 400px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        flex-direction: column;
+    }
+}
