@@ -1,19 +1,61 @@
+@media screen and (max-width:800px) {
+
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+@media screen and (max-width:700px) {
+
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
 @media screen and (max-width: 400px) {
+
     .nav-container {
         flex-direction: column;
     }
 
-    .nav-item {
+    .items {
+
         flex-direction: column;
+        width: 100%;
+
+    }
+
+    .items a {
+        margin-top: 20px;
+    }
+
+    .icons-container .logo {
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     .banner-container {
 
         flex-direction: column;
+
     }
 
     .banner-text,
     .banner-img {
         width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .icon-text i {
+        font-size: 30px;
+    }
+
+    .fa-brands {
+        font-size: 30px;
     }
 }
